@@ -67,3 +67,16 @@
 * ✔ Declaration, Length, Accessing
 * ✔ For each loop
 * ✔ 2d arrays
+
+## Conditional Statements
+
+* ✔ if else
+* ✔ if else if
+* ✔ nested if else
+* ✔ switch
+
+## Loops
+
+* ✔ for loops
+* ✔ while loops
+* ✔ do while loops

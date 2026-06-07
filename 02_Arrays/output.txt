@@ -1,13 +1,1 @@
-
-=========== Arrays =========
-simple container to store multiple values in a single variable; can store a single data type
-
-third element in the array --> 30
-this trows run time error, access out of scope memory --> arrays[10] 
-Printing for loop
-number 10
-number 20
-number 30
-number 40
-2d arrays
-Element at index 1,1 is => 4
+java.lang.ArithmeticException: / by zero

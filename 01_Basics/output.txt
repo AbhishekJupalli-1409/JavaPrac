@@ -49,3 +49,48 @@ Combined name is --> Abhishek Jupalli
 Implicit typecasting of variable z --> 10.0
 Lossy convertion mention explicit
 Explicit convertion -->10
+
+===========  Constants =========
+
+=========== Arrays =========
+simple container to store multiple values in a single variable; can store a single data type
+
+third element in the array --> 30
+this trows run time error, access out of scope memory --> arrays[10] 
+Printing for loop
+number 10
+number 20
+number 30
+number 40
+2d arrays
+Element at index 1,1 is => 4
+
+=========== Conditional Statements =========
+Enter your age: 
+You are yet a child Njoy ur little momements.
+Please enter yout marks to get the grade :
+grade D
+give me number to guess date
+Friday
+
+=========== Loops =========
+give me number i'll print till there!!
+0
+1
+2
+3
+4
+Number of numbers which needs summation!
+Enter number 1
+Enter number 2
+Enter number 3
+Enter number 4
+The final array is
+[4,5,6,7]
+Printing using the while give number
+0
+1
+2
+
+=========== Exception Handling =========
+java.lang.ArithmeticException: / by zero
