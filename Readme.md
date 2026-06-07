@@ -55,6 +55,6 @@
 - ✔ `final` keyword
 
 ## Arrays
-- Declaration
-- Length
-- Accessing
+- ✔ Declaration, Length, Accessing
+- ✔ For each loop
+- ✔ 2d arrays
