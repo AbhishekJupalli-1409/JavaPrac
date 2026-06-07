@@ -39,20 +39,20 @@
 - ✔ `equals()`
 
 ## Input / Output
-- Scanner Class
-- `nextInt()`
-- `nextDouble()`
-- `nextLine()`
-- `nextBoolean()`
-- `next()`
-- Why not BufferedReader
+- ✔ Scanner Class
+- ✔ `nextInt()`
+- ✔ `nextDouble()`
+- ✔ `nextLine()`
+- ✔ `nextBoolean()`
+- ✔ `next()`
+- ✔ Why not BufferedReader --> returns string -> u have convert to ur respective data type
 
 ## Type Casting
-- Implicit
-- Explicit
+- ✔ Implicit
+- ✔ Explicit
 
 ## Constants
-- `final` keyword
+- ✔ `final` keyword
 
 ## Arrays
 - Declaration

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Basics {
     public static void main(String[] args) {
         
@@ -97,8 +99,11 @@ public class Basics {
         
         // same goes with negative also;
 
+
+
         // Relational operators
         //  ==, != , < , > , >= , <=
+
 
         // Logical operators 
 
@@ -125,6 +130,7 @@ public class Basics {
         
         // ! ============== Strings ==========
 
+
         System.out.println("\n===========  Strings =========");
         String nameself = "Abhishek Jupalli";
         System.out.println(nameself);
@@ -141,6 +147,45 @@ public class Basics {
         // * when you do this it creates a new memory location and adds both strings and firstname points to that new location
 
         // * equals operator compares the strings.
+
+
+
+        // ! =========== Input/Output ===========
+        System.out.println("\n===========  Input Output =========");
+        // we need to use a package call import java.util.Scanner;
+        System.out.println("In order to use Scanner create a object of it");
+
+        Scanner scanner = new Scanner(System.in);
+        // * Resource leak: 'scanner' is never closedJava(536871799)
+        int scannum = scanner.nextInt();// picks up the num and put it in
+        System.out.println("the scanned number is -> " + scannum);
+        // * after using the class clear the space so that it won't be store in the memory
+        String firstName = scanner.next();
+        String lastName = scanner.next();
+        System.out.println("scan word by word in each variable");
+        System.out.println("Combined name is --> " + firstName + " " + lastName);
+        scanner.close();
+
+        // ! =========== TypeCasting ===========
+        System.out.println("\n===========  TypeCasting =========");
+        
+        int z = 10;
+        double y = z;
+
+        System.out.println("Implicit typecasting of variable z --> " + y );
+        System.out.println("Lossy convertion mention explicit");
+        //int x = y; //incompatible types: possible lossy conversion from double to int(errors(1): 174:9-174:19)
+        int xvar = (int) y;
+        System.out.println("Explicit convertion -->" + xvar);
+
+        // ! =========== Constants ===========
+        System.out.println("\n===========  Constants =========");
+        // in large codebase you dont want others to change your variable then you need use the final keyword
+        final int dontchange = 89;
+        // dontchange = 32;
+        // * The final local variable dontchange cannot be assigned. It must be blank and not using a compound assignmentJava(536870970)cannot assign a value to final variable dontchange
+
+
 
 
 

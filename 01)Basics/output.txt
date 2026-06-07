@@ -35,6 +35,17 @@ Result of OR operator is true
 ===========  Strings =========
 Abhishek Jupalli
 Lenght of the string ->16
-printing the 3rd characterh
-printing the Substring characterhishek Jupalli
-printing the jupalli characterJupalli
+printing the 3rd character -> h
+printing the Substring character -> hishek Jupalli
+printing the jupalli character -> Jupalli
+
+===========  Input Output =========
+In order to use Scanner create a object of it
+the scanned number is -> 2
+scan word by word in each variable
+Combined name is --> Abhishek Jupalli
+
+===========  TypeCasting =========
+Implicit typecasting of variable z --> 10.0
+Lossy convertion mention explicit
+Explicit convertion -->10
