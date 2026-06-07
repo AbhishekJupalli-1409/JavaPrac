@@ -1,68 +1,60 @@
 # Java Basics
 
 ## Sample Code (Print Hello World)
-
-* Explain `main` — *(Done)* -
-* Explain `static` — *(Done)* -
-* Explain command line — *(Done)* -
-* Sample output -
+- ✔ Explain `main`
+- ✔ Explain `static`
+- ✔ Explain command line
+- ✔ Sample output
 
 ## Comments
-
-* Single Line — *(Done)* -
-* Multi Line — *(Done)* -
+- ✔ Single Line
+- ✔ Multi Line
 
 ## Data Types
-
-* byte — *(Done)* -
-* short — *(Done)* -
-* int — *(Done)* -
-* long — *(Done)* -
-* float — *(Done)* -
-* double — *(Done)* -
-* char — *(Done)* -
+- ✔ byte
+- ✔ short
+- ✔ int
+- ✔ long
+- ✔ float
+- ✔ double
+- ✔ char
 
 ## Operators
-
-* Arithmetic — *(Done)* -
-* Unary Operators — *(Done)* -
-* Relational Operators — *(Done)* -
-* Logical Operators — *(Done)* -
-* Assignment Operators — *(Done)* -
-* Bitwise *(To be done in Bit Manipulation)* — *(Done)* -
-* Ternary Operators -
+- ✔ Arithmetic
+- ✔ Unary Operators
+- ✔ Relational Operators
+- ✔ Logical Operators
+- Assignment Operators
+- Bitwise *(To be done in Bit Manipulation)*
+- Ternary Operators
 
 ## Strings
-
-* Define, Immutable -
-* Char array to String -
-* Concatenate -
-* Length -
-* charAt() -
-* substring() -
-* equals() -
+- Define
+- Immutable
+- Char array to String
+- Concatenate
+- Length
+- `charAt()`
+- `substring()`
+- `equals()`
 
 ## Input / Output
-
-* Scanner Class -
-* nextInt() -
-* nextDouble() -
-* nextLine() -
-* nextBoolean() -
-* next() -
-* Why not BufferedReader -
+- Scanner Class
+- `nextInt()`
+- `nextDouble()`
+- `nextLine()`
+- `nextBoolean()`
+- `next()`
+- Why not BufferedReader
 
 ## Type Casting
-
-* Implicit -
-* Explicit -
+- Implicit
+- Explicit
 
 ## Constants
-
-* `final` keyword -
+- `final` keyword
 
 ## Arrays
-
-* Declaration -
-* Length -
-* Accessing -
+- Declaration
+- Length
+- Accessing
