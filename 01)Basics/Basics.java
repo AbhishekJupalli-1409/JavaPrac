@@ -100,8 +100,47 @@ public class Basics {
         // Relational operators
         //  ==, != , < , > , >= , <=
 
+        // Logical operators 
 
+        // && , || 
+        boolean first = true;
+        boolean second = false;
+
+        System.out.println("Result of AND operator is " + (first && second));
+        System.out.println("Result of OR operator is " + (first || second));
         
+        // Assignment operator
+
+        // ans  = ans + 2;
+        // * instead you can write 
+        // ans += 2;
+
+        // Bitwises operator we will be explaining later
+
+        // Ternary operator 
+        // * Condiciton ? x : y
+        // if true prints x else print y
+
+        System.out.println(10 > 2 ? "10 is the ans" : "this doesn't print");
+        
+        // ! ============== Strings ==========
+
+        System.out.println("\n===========  Strings =========");
+        String nameself = "Abhishek Jupalli";
+        System.out.println(nameself);
+        System.out.println("Lenght of the string ->" + nameself.length());
+        System.out.println("printing the 3rd character -> " + nameself.charAt(2));
+        System.out.println("printing the Substring character -> " + nameself.substring(2));
+        System.out.println("printing the jupalli character -> " + nameself.substring(9,nameself.length()));
+
+
+        String firstname = "Abhi";
+        String lastname = "shek";
+        firstname += " " + lastname;
+        // * string are immutable in java
+        // * when you do this it creates a new memory location and adds both strings and firstname points to that new location
+
+        // * equals operator compares the strings.
 
 
 

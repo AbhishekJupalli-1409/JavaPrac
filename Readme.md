@@ -24,19 +24,19 @@
 - ✔ Unary Operators
 - ✔ Relational Operators
 - ✔ Logical Operators
-- Assignment Operators
-- Bitwise *(To be done in Bit Manipulation)*
-- Ternary Operators
+- ✔ Assignment Operators
+- Bitwise *(To be done in Bit Manipulation)* 📝
+- ✔ Ternary Operators
 
 ## Strings
-- Define
-- Immutable
-- Char array to String
-- Concatenate
-- Length
-- `charAt()`
-- `substring()`
-- `equals()`
+- ✔ Define
+- ✔ Immutable
+- ✔ Char array to String
+- ✔ Concatenate
+- ✔ Length
+- ✔ `charAt()`
+- ✔ `substring()`
+- ✔ `equals()`
 
 ## Input / Output
 - Scanner Class

@@ -28,3 +28,13 @@ Pre Increment
 
 Post Increment
 8
+Result of AND operator is false
+Result of OR operator is true
+10 is the ans
+
+===========  Strings =========
+Abhishek Jupalli
+Lenght of the string ->16
+printing the 3rd characterh
+printing the Substring characterhishek Jupalli
+printing the jupalli characterJupalli
