@@ -35,16 +35,20 @@
      └───────────────────────┘
 ```
 #### 01) What is oops?
-we use concept of class multiple times using objects
+we use concept of class multiple times using objects.
+
 #### 02) Difference between the procedural and OOP?
 procedural --> c language doesnt have objects code runs sequentially(variables exposed, can't reuse code) , oops --> c++, java, python have class,objects, we have Many iterations (hidden layer, can reuse code)
+
 #### 03) Why use oops?
 1) Make our code modular --> huge business logic is spilitted
 2) Make our code reusalbe --> reusable function is used repeatedly
 3) Make code Scalable --> 
 4) Make is secure
+
 #### 04) Real life analogy of oops?
 think in a banking application both the user have been using the same code without objects the will be *upadting the same balance variable* and storing in db this causes the *Major issue*. Thats when we use the oops. And its scaleble and secure.
+
 #### 05) Why is oops better for the Large Scale Apps?
 In big MNC where there is large scale appication we should make sure nothing breaks so in that cases we use the oops concepts there
 
@@ -85,6 +89,7 @@ main(){
     // both the variable don't override each other or interfear with each other.
 }
 ```
+
 #### 03) What is a attributes and behaviour?
 Attributes are nothing but all the variables in the class and behaviour is nothing but the internal funciton in the class
 ```java
@@ -94,6 +99,7 @@ salary = "2000"
 //Behaviour
 setName(), setSalary
 ```
+
 #### 04) How are objects created and destroyed in the memory?
 1) Stack memory ->realtime memory which is created during the runtime, this is a temporary memory// when you use up all this memory which causes the stackoverflow.
 2) Heap memory -> this memory which is in your systmem // this is very very large memory// if this is full means ur system memory is full
@@ -115,6 +121,7 @@ public class Main {
     }
 }
 ```
+### Java Stack vs Heap Memory..
 ```
                     JAVA MEMORY
 
@@ -133,3 +140,67 @@ public class Main {
                                                        └─────────────────────────────────────┘
 ```
 
+
+### Type declarations Image 
+---
+
+[TypeDeaclarations Image](typeDecalrations.png)
+
+> TODO: create a Student class attributes name(String) rollNumber(int) methods setDetails(String name,int rollNumber), displayDetails() 
+
+
+### Attributes and Methods
+#### 1) What are attributes and methods?
+1) Attributes variables that store the data(these shouldn't be exposed to outer world(private)) 
+2) Functions in a class are called as the methods if the name is same as class then it is called default constructor.
+
+#### 2) How attributes and methods work together?
+Instead of people acess the sensitive data rather give me public function which they can use, keep the attributes private , create setter and getter methods.
+
+#### 3) Key points for starters (accessing, encapsulation, default values, error handling)?
+Please be very careful of the data which you expose outside it should be encapsulated(most of cases we use private),
+*Maintain correct error logs and the print statements so that when somethings went wrong its easy to debug*
+
+#### 4) Implement a Bank Account class keeping all things in mind.
+```java
+class BankAccount{
+    private String name;
+    private double balance;
+    BankAccount(String name, double balance){
+        this.name = name;
+        this.balance = balance;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public string getName(){
+        return name;
+    }
+    public double getBalance(){
+        return balance;
+    }
+    // giving default values in a class in user doesn't input so does the code wont break
+    BankAccount(){
+        name = "";
+        balance = 0.00;
+    }
+    // use correct error handling
+    public void addMoney(double amount){
+        if(amount>0) balance += amount;
+        else System.out.println("amount shouldn't be a negative value");
+    }
+    public boolean withdrawMoney(double amount){
+        if(amount>=balance){
+            balance -= amount;
+            return true;
+        }
+        System.out.println("your balance is low");
+        return false;
+    }
+}
+```
+
+> TODO: Design a BankAccount class
+> Attributes accountNumber(string), balance(double)
+> Constructor parameterised with accountNumber a balance initialised
+> Methods deposit(double amount)-> it adds the money to the users account, withdraw(double amount)-> deducts the money if insufficient print "Insufficient Funds", displayDetails()-> displays the accountnumber and balance of the account
