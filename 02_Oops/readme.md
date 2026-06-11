@@ -204,3 +204,90 @@ class BankAccount{
 > Attributes accountNumber(string), balance(double)
 > Constructor parameterised with accountNumber a balance initialised
 > Methods deposit(double amount)-> it adds the money to the users account, withdraw(double amount)-> deducts the money if insufficient print "Insufficient Funds", displayDetails()-> displays the accountnumber and balance of the account
+
+```java 
+class BankAccount{
+    private String accountNumber;
+    private double balance;
+    BankAccount(String accountNumber,double balance){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+
+        }
+        public void deposit(double amount){
+            balance += amount;
+        }
+        public void withdraw(double amount){
+            if(balance>=amount) balance -= amount;
+            else System.out.println("Insufficient funds!");
+        }
+        public void displayDetails(){
+            System.out.println("Account Number : " + accountNumber);
+            System.out.println( "Balance : " + balance);
+        }
+
+```
+
+### Constructor
+
+#### 1) key Features
+If there is name method of same name as in the class name, when we are creating an object it creates the default constructor and calls it. Constructor in the java doesn't have any return types not even void
+#### 2) Purpose of a constructor
+1) creating an object instances.
+2) Reusing the codes
+```java 
+class Account{
+    String name
+    int balance;
+    Account(){
+        balance = 1000;// set default balance is called when object is created
+    }
+    getBalance(){
+        return balance;
+    }
+}
+```
+#### 3) Types of a constructor
+1) Non parameterised constructor
+2) Parameterised constructor
+3) Copy constructor
+parameterised constructor is giving parameters to constructor as same name as the class;
+#### 4) Can a constructor call another constructor
+```java 
+class Account{
+    String name
+    int balance;
+    Account(name,balance){
+        this.name = name;
+        this.balance = balance;
+    }
+    Account(name){// this is called overloading of a constructor, in case i need to open with one paramenter
+        this.name = name;
+    }
+    Account(balance){
+        this.balance = balance;
+    }
+    Account(Account account){// passing account object as the parameter
+        Account(account.getName(),account.getBalance());
+        // using the params contructor but sending values from differnent objects of same type
+        // this is called as the copy constructor
+        
+    }
+    getName(){
+        return name;
+    }
+    getBalance(){
+        return balance;
+    }
+}
+
+main(){
+    Account obj = new Account("ABhishek",10000);//-> default Parameterised constructor
+    Account obj2 = new Account()// After creating a parameterised constructor if you call the default constructor then this will throw an error.
+    // and the above data is stored in the heap memory.
+}
+```
+yes we can call one constructor from another as you have seen in the copy constructor
+
+#### 5) Can a constructor be overloaded
+In a class if the same methods having different parameters then it is called as overloading, if it is done on the default constructor then it is called constructor overloading. You can't have same methods having same parameters then you will get the error..
